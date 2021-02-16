@@ -1,0 +1,7 @@
+extends layout
+
+block layout-content
+  div.View
+    h3 Session Id: #{uuid}
+    textarea(class="hugebox" name="collabBox" id="collabBox" rows="4" cols="50")
+    input(id="mqSession" value={uuid} type="hidden")
