@@ -2,7 +2,6 @@ const express = require('express')
 const app = express()
 const port = 3000
 const {v4 : uuidv4} = require('uuid')
-const init_uuid = uuidv4()
 const path = require('path');
 //mqtt config
 var mqtt = require('mqtt')
@@ -17,7 +16,7 @@ app.listen(port, () => {
 })
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "Collab-Edit" , uuid: init_uuid});   
+  res.render("index", { title: "Collab-Edit" , uuid: uuidv4()});   
 });
 
 app.get("/:id", (req, res) => {

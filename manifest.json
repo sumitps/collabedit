@@ -1,0 +1,8 @@
+{
+    "runtime":{
+    "majorVersion":"6"
+    },
+    "command": "node ./index.js",
+    "release": {},
+    "notes": "Application to allow code/plain text collaboration"
+}
